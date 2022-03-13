@@ -12,11 +12,9 @@ class Home extends React.Component{
      <MasterLayout>
 
       <div className='home'>
-        <h1>home</h1>
 
         <BrowserRouter>
           <Routes>
-            {/* <Route path="" element={<Navbar/>}> */}
             <Route exact path="/alphabet" element={ <AlphabetIndex/> } >
             </Route>
           </Routes>
