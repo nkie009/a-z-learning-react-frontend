@@ -1,23 +1,29 @@
 import React from 'react'
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import MasterLayout from '../layout/MasterLayout';
 import AlphabetIndex from './AlphabetIndex';
-import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import Navbar from './Navbar';
+
 
 class Home extends React.Component{
   render(){
+
     return(
+     <MasterLayout>
+
       <div className='home'>
         <h1>home</h1>
 
-
-        <Router>
+        <BrowserRouter>
           <Routes>
-            <Route path="" element={ <AlphabetIndex/> }>
+            {/* <Route path="" element={<Navbar/>}> */}
+            <Route exact path="/alphabet" element={ <AlphabetIndex/> } >
             </Route>
           </Routes>
-        </Router>
+        </BrowserRouter>
 
-
-      </div>
+        </div>
+    </MasterLayout>
     )
   }
 }
