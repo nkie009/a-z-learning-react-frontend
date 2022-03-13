@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import './css/AlphabetIndex.css'
 
 
 const BASE_URL = 'http://localhost:3000/alphabets'
@@ -31,7 +32,6 @@ function AlphabetIndex() {
 
   }, []); //useEffect
 
-
   return (
     <div>
       {loading && <div>Loading</div>}
@@ -39,8 +39,8 @@ function AlphabetIndex() {
         <div>
           <h2>show index data</h2>
           {allAbc.map(abc => (
-            <div key={abc.id}>
-              <img src={`http://localhost:3000/assets/${abc.image}`} />
+            <div key={abc.id} className="alphabetsIndex">
+              <img className="lettersIndex" src={`http://localhost:3000/assets/${abc.image}`} />
             </div>
           ))}
 

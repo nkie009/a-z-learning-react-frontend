@@ -1,0 +1,9 @@
+.alphabetsIndex{
+  border: 3px solid red;
+  display: inline-block;
+}
+
+.lettersIndex{
+  width: 100px;
+  cursor: pointer;
+}
