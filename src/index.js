@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './components/Home';
+import MasterLayout from './layout/MasterLayout';
 
 ReactDOM.render(
-    <Home />,
+    <MasterLayout />,
   document.getElementById('root')
 );
 

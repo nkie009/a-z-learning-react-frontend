@@ -15,7 +15,7 @@ class Home extends React.Component{
 
        Hello
 
-       <AlphabetIndex />
+       {/* <AlphabetIndex /> */}
 
         </div>
     )

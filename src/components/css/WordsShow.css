@@ -1,0 +1,10 @@
+.showCard{
+  border: 3px solid red;
+  width: 350px;
+  text-align: center;
+}
+
+.itemShowImage{
+  border: 3px solid red;
+  width: 150px;
+}

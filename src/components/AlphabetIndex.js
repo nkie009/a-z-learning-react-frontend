@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import axios from 'axios';
 import './css/AlphabetIndex.css'
 
@@ -11,6 +13,7 @@ function AlphabetIndex() {
   const [allAbc, setAllAbc] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
 
@@ -32,6 +35,11 @@ function AlphabetIndex() {
 
   }, []); //useEffect
 
+  // handleClick = (ev) => {
+  //   ev.preventDefault();
+  //   console.log('check if clicked');
+  // };
+
   return (
     <div>
       {loading && <div>Loading</div>}
@@ -40,13 +48,12 @@ function AlphabetIndex() {
           <h2>show index data</h2>
           {allAbc.map(abc => (
             <div key={abc.id} className="alphabetsIndex">
-              <img className="lettersIndex" src={`http://localhost:3000/assets/${abc.image}`} />
+              <img className="lettersIndex" src={`http://localhost:3000/assets/${abc.image}`} onClick={() => navigate(`/alphabets/${abc.id}`)}/>
             </div>
           ))}
 
         </div>
-      )
-      }
+      )}
     </div>
   )// return
 } // AlphabetIndex

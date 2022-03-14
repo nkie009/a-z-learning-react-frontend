@@ -18,10 +18,10 @@ function MasterLayout(props) {
 
       <BrowserRouter>
         <Routes>
-          <Route path="" element={<Home />} />
-            {/* <Route exact path="/words/:id" element={ <WordsShow/> } > */}
+          <Route path="" element={<Home />} />        
+           <Route exact path="/alphabets" element={<AlphabetIndex />} />
+           <Route exact path="/alphabets/:id" element={<WordsShow />} />
 
-            <Route exact path="/alphabets" element={<AlphabetIndex />} />
         </Routes>
       </BrowserRouter>
 
