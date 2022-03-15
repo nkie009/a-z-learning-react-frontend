@@ -8,7 +8,7 @@ import Home from '../components/Home';
 
 function MasterLayout(props) {
 
-  console.log(props);
+  // console.log(props);
 
   return (
     <div>
@@ -18,9 +18,9 @@ function MasterLayout(props) {
 
       <BrowserRouter>
         <Routes>
-          <Route path="" element={<Home />} />        
+          <Route path="/" element={<Home />} />        
            <Route exact path="/alphabets" element={<AlphabetIndex />} />
-           <Route exact path="/alphabets/:id" element={<WordsShow />} />
+           <Route exact path="/alphabets/:character" element={<WordsShow />} />
 
         </Routes>
       </BrowserRouter>

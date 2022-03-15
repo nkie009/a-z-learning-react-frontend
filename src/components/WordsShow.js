@@ -7,36 +7,42 @@ const BASE_URL_WORDS = 'http://localhost:3000/words/'
 
 
 function WordsShow() {
-
-  const [words, setWords] = useState([]);
+  // word is for storing the response from the api backend, which will be the 'word' object
+  const [word, setWord] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const { id } = useParams();
+  const { character } = useParams();
+
 
   useEffect(() => {
-    console.log('id:', id);
-    const fetchData = async () => {
-      setLoading(true);
-      try {
-        const res = await axios.get(BASE_URL_WORDS + id);
-        console.log('CHECK Response', res.data);
-        setWords(res.data);
-      } catch (err) {
-        console.log('Error in search AJAX', err);
-        setError(err);
-      }
-      setLoading(false)
-    }
-
+    console.log('Char', character);
     fetchData();
-
   }, []); //useEffect
 
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      const res = await axios.get(BASE_URL_WORDS + character);
+      console.log('CHECK Response', res.data);
+      setWord(res.data);
+    } catch (err) {
+      console.log('Error in search AJAX', err);
+      setError(err);
+    }
+    setLoading(false);
+  }; // end of fetchData
 
-  const { item, definition, image_items } = words
+  const refresh = () => {
+    fetchData();
+    setLoading(true);
+  };
+
+  // console.log('WORD', word)
+  const { item, definition, image_items } = word
+
 
   return (
-    <div>
+    <div className="wordShow">
       <h1>WordsShow page</h1>
       {loading && <div>Loading</div>}
       {!loading && (
@@ -44,7 +50,7 @@ function WordsShow() {
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />
           <p>{item}</p>
           <p>{definition}</p>
-          <button>Random Pick</button>
+          <button onClick={refresh}>Random Pick</button>
         </div>
       )}
 

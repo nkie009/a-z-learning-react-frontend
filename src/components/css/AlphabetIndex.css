@@ -1,3 +1,8 @@
+.abcBox{
+  margin-top: 100px;
+
+}
+
 .alphabetsIndex{
   margin: 5px;
   padding: 10px;
@@ -6,6 +11,7 @@
   align-items: center;
   border-radius: 10px;
   box-shadow: 5px 5px purple;
+  
 }
 
 @keyframes bounce {
