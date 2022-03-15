@@ -10,6 +10,8 @@ export default function Navbar() {
   return (
 
     <div className='navbar'>
+
+    <div>logo goes here</div>
     
     <a href="/">Home</a>
     |

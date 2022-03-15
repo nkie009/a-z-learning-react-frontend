@@ -5,4 +5,5 @@
   background-color: rgb(100, 200, 255, 0.5);
   position: fixed;
   top: 0;
+  display: inline;
 }

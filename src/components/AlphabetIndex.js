@@ -8,7 +8,7 @@ import './css/AlphabetIndex.css'
 
 // const BASE_URL = 'http://localhost:3000/alphabets'
 
-const letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z' ];
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 
 function AlphabetIndex() {
@@ -44,19 +44,22 @@ function AlphabetIndex() {
   //   console.log('check if clicked');
   // };
 
- 
+
   return (
     <div>
-      {(
-        <div className='abcBox'>
-          {letters.map(letter => (
-            <div key={letter} className="alphabetsIndex">
-              <img className="lettersIndex" src={`http://localhost:3000/assets/${letter}.svg`} onClick={ () => navigate(`/alphabets/${letter}`)}/>
-            </div>
-          ))}
 
-        </div>
-      )}
+      <div className='abcBox'>
+      
+        {letters.map(letter => (
+          <div key={letter} className="alphabetsIndex">
+
+            <img className="lettersIndex" src={`./images/${letter}.svg`} alt="images" onClick={() => navigate(`/alphabets/${letter}`)} />
+
+          </div>
+        ))}
+
+      </div>
+
     </div>
   )// return
 } // AlphabetIndex
