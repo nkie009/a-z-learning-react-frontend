@@ -16,6 +16,9 @@ export default function Navbar() {
     <a href="/">Home</a>
     |
     <a href="/alphabets">A-Z</a>
+    |
+    <a href="/maths-tables">+ table</a>
+
 
     </div>
   )

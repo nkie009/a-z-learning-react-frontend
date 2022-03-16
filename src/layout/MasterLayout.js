@@ -7,7 +7,6 @@ import Home from '../components/Home';
 import Calculator from '../components/Calculator';
 
 
-
 export default function MasterLayout(props) {
 
   // console.log(props);
