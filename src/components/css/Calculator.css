@@ -5,6 +5,7 @@
   align-items: center;
 }
 
+
 .groupCal{
   top: 50%;
   left: 50%;
@@ -17,6 +18,8 @@
   background: palegoldenrod;
   border-radius: 5px;
 }
+
+
 
 button{
   font-weight: 600;
@@ -52,14 +55,10 @@ button{
   grid-row: 5;
 }
 
-input:focus,
-input:active,
-button:focus,
-button:active{
-  outline: none;
-}
-
 #bgColor{
   background: yellow;
 }
 
+.timesTable{
+  padding: 0.5rem;
+}

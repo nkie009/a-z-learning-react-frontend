@@ -8,11 +8,12 @@ export default function Calculator() {
 
   const [result, setResult] = useState('');
   const handleClick = (e) =>{
+    console.log('check e', e);
     setResult(result + (e.target.name))
   };// handleClick
 
   const clear = () =>{
-    setResult("");
+    setResult(""); // here is to set the results empty
   } // clear
  
   const backspace = () =>{
@@ -26,6 +27,9 @@ export default function Calculator() {
   return (
     <div className="calPage">
       {/* <h1>Calculator</h1> */}
+
+      <img className="timesTable" src={`./images/timestables.svg`} alt="times" />
+
       <div className="groupCal">
         <form>
           <input type="text" value={result} className="inputNum"/>
@@ -50,12 +54,7 @@ export default function Calculator() {
           <button name="0" onClick={handleClick}>0</button>
           <button name="." onClick={handleClick}>.</button>
           <button onClick={equal} className="equalButton" >=</button>
-        </div>
-
-
-
-
-        
+        </div>        
       </div>
     
     
