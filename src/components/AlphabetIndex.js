@@ -3,8 +3,7 @@ import './css/AlphabetIndex.css'
 
 const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-
-function AlphabetIndex() {
+export default function AlphabetIndex() {
 
   const navigate = useNavigate();
 
@@ -14,9 +13,10 @@ function AlphabetIndex() {
       <div className='abcBox'>
 
         {letters.map(letter => (
+
           <div key={letter} className="alphabetsIndex">
 
-            <img className="lettersIndex" src={`./images/${letter}.svg`} alt="images" onClick={() => navigate(`/alphabets/${letter}`)} />
+            <img className="lettersIndex" src={`./images/${letter}.svg`} alt="a-zImages" onClick={() => navigate(`/alphabets/${letter}`)} />
 
           </div>
         ))}
@@ -26,5 +26,3 @@ function AlphabetIndex() {
     </div>
   )// return
 } // AlphabetIndex
-
-export default AlphabetIndex;

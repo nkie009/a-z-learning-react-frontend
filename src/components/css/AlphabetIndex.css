@@ -1,11 +1,13 @@
 .abcBox{
-  margin-top: 100px;
+  margin-top: 8rem;
+  border: 3px solid red;
+  text-align: center;
 
 }
 
 .alphabetsIndex{
-  margin: 5px;
-  padding: 10px;
+  margin: 0.5rem;
+  padding: 0.5rem;
   border: 3px solid pink;
   display: inline-block;
   align-items: center;
@@ -31,8 +33,10 @@
 		transform:         translateY(-15px)
 	}
 }
+
 .lettersIndex {  
-  width: 100px;
+  /* border: 3px solid red; */
+  width: 20vw;
   cursor: pointer;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

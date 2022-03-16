@@ -6,7 +6,7 @@ import './css/WordsShow.css'
 const BASE_URL_WORDS = 'http://localhost:3000/words/'
 
 
-function WordsShow() {
+export default function WordsShow() {
   // word is for storing the response from the api backend, which will be the 'word' object
   const [word, setWord] = useState({});
   const [loading, setLoading] = useState(true);
@@ -38,15 +38,20 @@ function WordsShow() {
   };
 
   // console.log('WORD', word)
-  const { item, definition, image_items } = word
+  const { item, definition, image_items, image_letter } = word
 
 
   return (
     <div className="wordShow">
-      <h1>WordsShow page</h1>
+      {/* <h1>WordsShow page</h1> */}
+      
+      <div className="leftLetter">
+      <img className="letterShowImage" src={`http://localhost:3000/assets/${image_letter}`} />
+      </div>
+
       {loading && <div>Loading</div>}
       {!loading && (
-        <div className="showCard">
+        <div className="rightShowCard">
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />
           <p>{item}</p>
           <p>{definition}</p>
@@ -58,5 +63,3 @@ function WordsShow() {
 
   )
 }
-
-export default WordsShow;

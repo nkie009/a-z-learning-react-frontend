@@ -26,7 +26,7 @@ function MasterLayout(props) {
       </BrowserRouter>
 
 
-
+      <p className="copyright">frankie designed Copyright 2022 &copy;</p>
     </div>
   )
 }
