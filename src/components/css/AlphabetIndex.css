@@ -1,6 +1,6 @@
 .abcBox{
+  /* border: 3px solid red; */
   margin-top: 8rem;
-  border: 3px solid red;
   text-align: center;
 
 }
@@ -36,7 +36,7 @@
 
 .lettersIndex {  
   /* border: 3px solid red; */
-  width: 20vw;
+  width: 22vw;
   cursor: pointer;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
