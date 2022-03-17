@@ -10,11 +10,10 @@ export default function Navbar() {
 
     <div className='navbar'>
 
-    <div>logo goes here</div>
-
     <div className='navTabs'>
 
-
+      <img className='logo' src={`./images/azlearning.svg`} alt="azlogo" nClick={ () => navigate('/')}/>
+      
       <a className="azNav" href="/">Home</a>
       
       <a className="azTab" href="/alphabets">A-Z</a>
