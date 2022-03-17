@@ -1,6 +1,6 @@
 .calPage{
+  /* border: 3px solid red; */
   margin-top: 8rem;
-  border: 3px solid red;
   height: 600px;
   display: flex;
   /* justify-content: center;
@@ -9,7 +9,7 @@
 
 .calculator{
   width: 50%;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 

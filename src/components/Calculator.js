@@ -26,7 +26,7 @@ export default function Calculator() {
 
   return (
     <div className="calPage">
-      {/* <h1>Calculator</h1> */}
+      <h1>Calculator</h1>
 
       <div className="tablesDiv">
         <img className="timesTable" src={`./images/timestables.svg`} alt="times" />
