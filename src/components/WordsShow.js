@@ -43,13 +43,14 @@ export default function WordsShow() {
 
   return (
     <div className="wordShow">
+
       {/* <h1>WordsShow page</h1> */}
       
       <div className="leftLetter">
       <img className="letterShowImage" src={`http://localhost:3000/assets/${image_letter}`} />
       </div>
 
-      {loading && <div>Loading</div>}
+      {loading && <div>Loading</div>} // is to wait for data to load 
       {!loading && (
         <div className="rightShowCard">
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />

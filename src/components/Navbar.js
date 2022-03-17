@@ -2,7 +2,6 @@ import React from 'react'
 import './css/Navbar.css'
 import { useNavigate } from 'react-router-dom';
 
-
 export default function Navbar() {
 
   const navigate = useNavigate();
@@ -14,7 +13,6 @@ export default function Navbar() {
     <div>logo goes here</div>
 
     <div className='navTabs'>
-
 
 
       <a className="azNav" href="/">Home</a>

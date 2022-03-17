@@ -3,7 +3,10 @@ body {
   font-family: "League Spartan", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://images.unsplash.com/photo-1604324056382-626e26763941?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29sb3JmdWwlMjBwYXR0ZXJuc3xlbnwwfHwwfHw%3D&w=1000&q=80');
+  /* background-image: url("/bg.jpg"); */
+
+  background-image: url('https://www.stockvault.net/data/2018/08/16/253826/preview16.jpg');
+  background-size: 50%;
 }
 
 code {
