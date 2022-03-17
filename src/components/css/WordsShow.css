@@ -14,15 +14,17 @@
 }
 
 .rightShowCard{
-  border: 3px solid red;
-  padding: 0.5rem;
+  border: 5px solid rgb(176, 21, 214);
+  border-radius: 10px;
+  padding: 0.7rem;
   text-align: center;
   margin: 0 1rem 0 0.5rem;
+  box-shadow: 5px 5px black;
 }
 
 .leftLetter{
   margin: 0 0.5rem 0 1rem;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 
 }
 
@@ -35,3 +37,7 @@
   width: 100%;
 }
 
+.tileItem{
+  font-size: 40px;
+  font-weight: 600;
+}

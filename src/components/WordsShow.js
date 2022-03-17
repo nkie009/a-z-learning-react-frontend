@@ -53,7 +53,7 @@ export default function WordsShow() {
       {!loading && (
         <div className="rightShowCard">
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />
-          <p>{item}</p>
+          <p className="tileItem">{item}</p>
           <p>{definition}</p>
           <button onClick={refresh}>Random Pick</button>
         </div>
