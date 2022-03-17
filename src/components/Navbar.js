@@ -12,8 +12,8 @@ export default function Navbar() {
 
     <div className='navTabs'>
 
-      <img className='logo' src={`./images/azlearning.svg`} alt="azlogo" nClick={ () => navigate('/')}/>
-      
+      <img className='logo' src={`./images/azlearning.svg`} alt="azlogo" onClick={ () => navigate("/") }/>
+
       <a className="azNav" href="/">Home</a>
       
       <a className="azTab" href="/alphabets">A-Z</a>
