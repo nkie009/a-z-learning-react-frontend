@@ -5,7 +5,8 @@
 .tableButtons{
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  max-width: 100vw;
+  border: 3px solid red;
 }
 
 .tableButtons div{
