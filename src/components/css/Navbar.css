@@ -12,8 +12,12 @@
   font-size: 30px;
 }
 
-.homeTab, .azTab, .plusTab{
+/* .homeTab, .azTab, .plusTab{
 
   padding: 1rem;
 
-} 
+}  */
+
+.plusTab, .minusTab, .timesTab, .divideTab{
+  width: 20px;
+}

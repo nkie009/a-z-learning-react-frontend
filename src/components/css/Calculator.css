@@ -1,14 +1,16 @@
 .calPage{
   margin-top: 8rem;
-  /* display: flex; */
+  border: 3px solid red;
+  height: 600px;
+  display: flex;
   /* justify-content: center;
   align-items: center; */
 }
 
-.calPage div{
+/* .calPage div{
   display: inline-block;
   width: 50%;
-}
+} */
 
 
 .calculator{
@@ -18,15 +20,14 @@
 
 
 .groupCal{
-
+  margin-left: 10px;
+  display: inline-block;
   width: 16rem;
   text-align: center;
   border: 10px solid palevioletred;
   background: palegoldenrod;
   border-radius: 5px;
 }
-
-
 
 button{
   font-weight: 600;

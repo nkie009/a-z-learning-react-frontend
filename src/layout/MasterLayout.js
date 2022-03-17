@@ -7,6 +7,7 @@ import Home from '../components/Home';
 import Calculator from '../components/Calculator';
 
 
+
 export default function MasterLayout(props) {
 
   // console.log(props);
@@ -22,6 +23,8 @@ export default function MasterLayout(props) {
            <Route exact path="/alphabets" element={<AlphabetIndex />} />
            <Route exact path="/alphabets/:character" element={<WordsShow />} />
           <Route exact path="/maths-tables" element={<Calculator />} />
+          <Route exact path="" element={<Navbar />} />
+
         </Routes>
       </BrowserRouter>
 

@@ -15,15 +15,14 @@ export default function Home() {
 
       <div>banner goes here</div>
       
-      {/* <button className="azButton" onClick={ () => navigate('/alphabets')}>A-Z</button> */}
       <div className="tableButtons">
 
         <div className="azButton" onClick={ () => navigate('/alphabets')}>A-Z</div>
 
-        <img className="plusButton" src={`./images/plus.svg`} alt="plus" onClick={ () => navigate('/alphabets')} />
-        <img className="minusButton" src={`./images/minus.svg`} alt="plus" onClick={ () => navigate('/alphabets')} />
-        <img className="timesButton" src={`./images/times.svg`} alt="plus" onClick={ () => navigate('/alphabets')} />
-        <img className="divideButton" src={`./images/divide.svg`} alt="plus" onClick={ () => navigate('/alphabets')} />
+        <img className="plusButton" src={`./images/plus.svg`} alt="plus" onClick={ () => navigate('/maths-tables')} />
+        <img className="minusButton" src={`./images/minus.svg`} alt="plus" onClick={ () => navigate('/maths-tables')} />
+        <img className="timesButton" src={`./images/times.svg`} alt="plus" onClick={ () => navigate('/maths-tables')} />
+        <img className="divideButton" src={`./images/divide.svg`} alt="plus" onClick={ () => navigate('/maths-tables')} />
 
 
 
