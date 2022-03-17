@@ -13,12 +13,13 @@ export default function Navbar() {
 
     <div>logo goes here</div>
     
-    <a href="/">Home</a>
-    |
-    <a href="/alphabets">A-Z</a>
-    |
-    <a href="/maths-tables">+ table</a>
-
+    <div className='navTabs'>
+      <a className="homeTab" href="/">Home</a>
+      |
+      <a className="azTab" href="/alphabets">A-Z</a>
+      |
+      <a className="plusTab" href="/maths-tables">+ table</a>
+    </div>
 
     </div>
   )

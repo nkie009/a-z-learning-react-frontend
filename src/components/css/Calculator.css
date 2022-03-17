@@ -1,10 +1,14 @@
 .calPage{
   margin-top: 8rem;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center;
   align-items: center; */
 }
 
+.calPage div{
+  display: inline-block;
+  width: 50%;
+}
 
 
 .calculator{
@@ -68,7 +72,8 @@ button{
 }
 
 .timesTable{
-  padding: 0.5rem;
-  width: 50rem;
+  width: 100%;
   
 }
+
+
