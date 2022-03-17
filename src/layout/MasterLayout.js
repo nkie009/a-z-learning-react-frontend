@@ -14,16 +14,15 @@ export default function MasterLayout(props) {
 
   return (
     <div>
-      <Navbar />
       {props.children}
 
       <BrowserRouter>
+      <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />        
            <Route exact path="/alphabets" element={<AlphabetIndex />} />
            <Route exact path="/alphabets/:character" element={<WordsShow />} />
           <Route exact path="/maths-tables" element={<Calculator />} />
-          <Route exact path="" element={<Navbar />} />
 
         </Routes>
       </BrowserRouter>
