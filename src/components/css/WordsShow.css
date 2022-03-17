@@ -20,6 +20,7 @@
   text-align: center;
   margin: 0 1rem 0 0.5rem;
   box-shadow: 5px 5px black;
+  background-color: white;
 }
 
 .leftLetter{
@@ -40,4 +41,9 @@
 .tileItem{
   font-size: 40px;
   font-weight: 600;
+}
+
+.defineText{
+  font-size: 24px;
+  font-weight: 400;
 }

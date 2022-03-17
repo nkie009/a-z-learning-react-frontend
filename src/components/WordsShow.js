@@ -54,7 +54,7 @@ export default function WordsShow() {
         <div className="rightShowCard">
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />
           <p className="tileItem">{item}</p>
-          <p>{definition}</p>
+          <p className="defineText">{definition}</p>
           <button onClick={refresh}>Random Pick</button>
         </div>
       )}
