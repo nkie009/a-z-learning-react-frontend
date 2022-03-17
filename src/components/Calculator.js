@@ -7,20 +7,20 @@ import './css/Calculator.css'
 export default function Calculator() {
 
   const [result, setResult] = useState('');
-  const handleClick = (e) =>{
+  const handleClick = (e) => {
     console.log('check e', e);
     setResult(result + (e.target.name))
   };// handleClick
 
-  const clear = () =>{
+  const clear = () => {
     setResult(""); // here is to set the results empty
   } // clear
- 
-  const backspace = () =>{
+
+  const backspace = () => {
     setResult(result.slice(0, -1)); // here is to slice the position of the result and -1
   }// backspace
 
-  const equal = () =>{
+  const equal = () => {
     setResult(eval(result));
   }// equal
 
@@ -28,13 +28,16 @@ export default function Calculator() {
     <div className="calPage">
       {/* <h1>Calculator</h1> */}
 
-      <img className="timesTable" src={`./images/timestables.svg`} alt="times" />
+      <div className="tablesDiv">
+        <img className="timesTable" src={`./images/timestables.svg`} alt="times" />
+      </div>
 
+
+      <div className="calculator">
       <div className="groupCal">
         <form>
-          <input type="text" value={result} className="inputNum"/>
+          <input type="text" value={result} className="inputNum" />
         </form>
-
         <div className="keypad">
           <button onClick={clear} className="clear" id="bgColor">Clear</button>
           <button onClick={backspace} className="backspace" id="bgColor">C</button>
@@ -54,15 +57,16 @@ export default function Calculator() {
           <button name="0" onClick={handleClick}>0</button>
           <button name="." onClick={handleClick}>.</button>
           <button onClick={equal} className="equalButton" >=</button>
-        </div>        
+        </div>
       </div>
-    
-    
-    
-    
-    
-    
-    
+      </div>
+
+
+
+
+
+
+
     </div>
   )
 }

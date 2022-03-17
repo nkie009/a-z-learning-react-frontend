@@ -6,10 +6,16 @@
 }
 
 
+
+.calculator{
+  width: 50%;
+}
+
+
 .groupCal{
   top: 50%;
-  left: 50%;
-  position: absolute;
+  /* left: 50%; */
+  /* position: absolute; */
   transform: translate(-50%, -50%);
   margin: 0 auto;
   width: 16rem;
@@ -59,6 +65,13 @@ button{
   background: yellow;
 }
 
+.tablesDiv{
+  /* height: 100%; */
+  width: 50%;
+}
+
 .timesTable{
   padding: 0.5rem;
+  width: 50rem;
+  
 }
