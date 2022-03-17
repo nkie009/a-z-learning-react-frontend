@@ -50,7 +50,7 @@ export default function WordsShow() {
       <img className="letterShowImage" src={`http://localhost:3000/assets/${image_letter}`} />
       </div>
 
-      {loading && <div>Loading</div>} // is to wait for data to load 
+      {loading && <div>Loading</div>} 
       {!loading && (
         <div className="rightShowCard">
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />

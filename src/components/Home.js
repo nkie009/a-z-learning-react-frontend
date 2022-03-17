@@ -11,9 +11,9 @@ export default function Home() {
   return (
     <div className='home'>
 
-      <h1>Home</h1>
-
-      <div>banner goes here</div>
+      <div className="bannerImg">
+        <img className="banner1" src={`./images/ed.jpg`} alt="edBanner" />
+      </div>
       
       <div className="tableButtons">
 
