@@ -27,40 +27,14 @@
   /* border: 3px solid red; */
 }
 
-.plusButton{
-  width: 25%;
+.plusButton, .minusButton, .timesButton, .divideButton{
+  width: 18%;
   padding: 10px;
   text-align: center;  
   cursor: pointer;
   margin: 0.5rem;
   /* border: 3px solid red; */
 }
-.minusButton{
-  width: 25%;
-  padding: 10px;
-  text-align: center;  
-  cursor: pointer;
-  margin: 0.5rem;
-  /* border: 3px solid red; */
-}
-.timesButton{
-  width: 25%;
-  padding: 10px;
-  text-align: center;  
-  cursor: pointer;
-  margin: 0.5rem;
-  /* border: 3px solid red; */
-}
-
-.divideButton{
-  width: 25%;
-  padding: 10px;
-  text-align: center; 
-  cursor: pointer;
-  margin: 0.5rem;
-  /* border: 3px solid red; */
-}
-
 
 .banner1{
   width: 100vw;
