@@ -15,7 +15,7 @@
 
 .azButton{
 
-  width: 50%;
+  width: 25%;
   padding: 10px;
   font-size: 12vw;
   font-weight: 800;
@@ -28,30 +28,24 @@
 }
 
 .plusButton{
-  width: 50%;
+  width: 25%;
   padding: 10px;
-  font-size: 40px;
-  font-weight: 800;
   text-align: center;  
   cursor: pointer;
   margin: 0.5rem;
   /* border: 3px solid red; */
 }
 .minusButton{
-  width: 50%;
+  width: 25%;
   padding: 10px;
-  font-size: 40px;
-  font-weight: 800;
   text-align: center;  
   cursor: pointer;
   margin: 0.5rem;
   /* border: 3px solid red; */
 }
 .timesButton{
-  width: 50%;
+  width: 25%;
   padding: 10px;
-  font-size: 40px;
-  font-weight: 800;
   text-align: center;  
   cursor: pointer;
   margin: 0.5rem;
@@ -59,10 +53,8 @@
 }
 
 .divideButton{
-  width: 50%;
+  width: 25%;
   padding: 10px;
-  font-size: 40px;
-  font-weight: 800;
   text-align: center; 
   cursor: pointer;
   margin: 0.5rem;
