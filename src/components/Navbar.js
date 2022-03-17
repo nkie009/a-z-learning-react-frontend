@@ -1,6 +1,6 @@
 import React from 'react'
 import './css/Navbar.css'
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -14,13 +14,16 @@ export default function Navbar() {
     <div>logo goes here</div>
 
     <div className='navTabs'>
-      <a className="homeTab" href="/">Home</a>
-      |
+
+
+
+      <a className="azNav" href="/">Home</a>
+      
       <a className="azTab" href="/alphabets">A-Z</a>
-      |
+      
       
 
-      <img className="plusTab" src={`./images/plus.svg`} alt="plus" onClick={ () => navigate('/maths-tables')} />
+      <img className="timesTab" src={`./images/times.svg`} alt="times" onClick={ () => navigate('/maths-tables')} />
 
 
       {/* <img className="minusTab" src={`./images/minus.svg`} alt="plus" onClick={ () => navigate('/maths-table')} />

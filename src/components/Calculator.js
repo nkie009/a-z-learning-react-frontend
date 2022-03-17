@@ -7,9 +7,9 @@ import './css/Calculator.css'
 export default function Calculator() {
 
   const [result, setResult] = useState('');
-  const handleClick = (e) => {
-    console.log('check e', e);
-    setResult(result + (e.target.name))
+  const handleClick = (ev) => {
+    console.log('check e', ev);
+    setResult(result + (ev.target.name))
   };// handleClick
 
   const clear = () => {
