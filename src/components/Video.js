@@ -1,24 +1,45 @@
 import React from 'react'
+import './css/Video.css'
 
 export default function Video() {
   return (
     <div className="kidsTube">
 
       <iframe
-        id="player"
-        type="text/html"
-        width="640"
-        height="390"
-        src="http://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1&origin=http://example.com"
-        frameborder="0">
-        </iframe>
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/yJtNLPhDtJw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
 
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/NG809Re-SIs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
 
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/-gdcgnSrUvU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
 
-
-
-
-
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HGeuA4iJ8vI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
 
     </div>
   )
