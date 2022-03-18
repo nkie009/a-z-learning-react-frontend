@@ -10,17 +10,19 @@ export default function Navbar() {
 
     <div className='navbar'>
 
-    <div className='navTabs'>
+      <div className='navTabs'>
 
-      <img className='logo' src={`./images/azlearning.svg`} alt="azlogo" onClick={ () => navigate("/") }/>
+        <img className='logo' src={`./images/azlearning.svg`} alt="azlogo" onClick={() => navigate("/")} />
 
-      <a className="azHome" href="/">Home</a>
-      
-      <img className="azTab" src={`./images/abcNavbar.svg`} alt="times" onClick={ () => navigate('/alphabets')} />
+        <a className="azHome" href="/">Home</a>
 
-      <img className="timesTab" src={`./images/times.svg`} alt="times" onClick={ () => navigate('/maths-tables')} />
+        <img className="azTab" src={`./images/abcNavbar.svg`} alt="times" onClick={() => navigate('/alphabets')} />
 
-    </div>
+        <img className="timesTab" src={`./images/times.svg`} alt="times" onClick={() => navigate('/maths-tables')} />
+
+        <a className="kidsVideo" href="/learning-videos">Videos</a>
+
+      </div>
 
     </div>
   )

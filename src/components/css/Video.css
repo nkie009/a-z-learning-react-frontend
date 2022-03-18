@@ -1,8 +1,14 @@
 .kidsTube{
+  /* border: 3px solid red; */
   width: 100vw;
-  display: grid;
+  display: flew;
+  justify-content: space-between;
   margin-top: 6rem;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+
+}
+
+.v1, .v2, .v3, .v4{
+  display: inline-block;
+  margin: 2rem;
 }
