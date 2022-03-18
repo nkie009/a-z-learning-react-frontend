@@ -10,7 +10,6 @@
 
 .navTabs{
   /* border: 3px solid red; */
-  /* text-align: center; */
   margin: 0.4rem;
   display: flex;
   
@@ -22,11 +21,21 @@
   cursor: pointer;
 }
 
+.timesTab:hover{
+  transform: scale(1.2,1.2);
+  z-index: 9;
+}
+
 .azTab{
   /* border: 3px solid red; */
   width: 3.9rem;
   margin-right: 1.5rem;
   cursor: pointer;
+}
+
+.azTab:hover{
+  transform: scale(1.2,1.2);
+  z-index: 9;
 }
 
 .azHome{
