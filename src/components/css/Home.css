@@ -43,7 +43,7 @@
 
 .imgButton{
   width: 100vw;
-
+  justify-content: space-between;
 }
 
 .azButton:hover{
