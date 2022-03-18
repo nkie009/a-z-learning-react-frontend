@@ -50,7 +50,8 @@ export default function WordsShow() {
   return (
 
     <div>
-      <div className="backButton" onClick={() => navigate('/alphabets')} > &#8592; back</div>
+      <div className="backButton" onClick={() => navigate('/alphabets')} >&#8592; back
+      </div>
     <div className="wordShow">
 
       

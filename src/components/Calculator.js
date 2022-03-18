@@ -28,7 +28,10 @@ export default function Calculator() {
   return (
 
     <div>
-      <h1 className="calHeading">Calculator</h1>
+
+      <div className="calHeading">Calculator
+      </div>
+
       <div className="calPage">
 
         {/* <div className="tablesDiv">
