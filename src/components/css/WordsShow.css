@@ -1,7 +1,22 @@
 
+.backButton{
+  margin-top: 8rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+  cursor: pointer;
+  width: 7rem;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 0.2rem;
+  background-color: white;
+}
+
+.backButton:hover{
+  background-color: greenyellow;
+}
 
 .wordShow{
-  margin-top: 8rem;
   display: flex;
   flex-direction: row;
 
@@ -31,7 +46,7 @@
 
 .itemShowImage{
   /* border: 3px solid red; */
-  width: 80%;
+  width: 60%;
 }
 
 .letterShowImage{

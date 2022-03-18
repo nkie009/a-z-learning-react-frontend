@@ -2,16 +2,19 @@ import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom"
 import axios from 'axios';
 import './css/WordsShow.css'
+import { useNavigate } from 'react-router-dom';
 
 const BASE_URL_WORDS = 'http://localhost:3000/words/'
 
 
 export default function WordsShow() {
   // word is for storing the response from the api backend, which will be the 'word' object
+  const navigate = useNavigate();
   const [word, setWord] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { character } = useParams();
+  
 
 
   useEffect(() => {
@@ -42,9 +45,11 @@ export default function WordsShow() {
 
 
   return (
+
+    <div>
+      <div className="backButton" onClick={() => navigate('/alphabets')} > &#8592; back</div>
     <div className="wordShow">
 
-      {/* <h1>WordsShow page</h1> */}
       
       <div className="leftLetter">
       <img className="letterShowImage" src={`http://localhost:3000/assets/${image_letter}`} />
@@ -61,6 +66,6 @@ export default function WordsShow() {
       )}
 
     </div>
-
+</div>
   )
 }
