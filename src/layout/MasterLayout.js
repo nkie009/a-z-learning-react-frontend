@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import AlphabetIndex from '../components/AlphabetIndex';
 import WordsShow from '../components/WordsShow';
@@ -16,7 +16,7 @@ export default function MasterLayout(props) {
     <div>
       {props.children}
 
-      <BrowserRouter>
+      <Router>
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />        
@@ -25,7 +25,7 @@ export default function MasterLayout(props) {
           <Route exact path="/maths-tables" element={<Calculator />} />
 
         </Routes>
-      </BrowserRouter>
+      </Router>
 
         
 
