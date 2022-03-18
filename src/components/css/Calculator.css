@@ -28,7 +28,7 @@
 
 
 .groupCal{
-  margin-right: 2rem;
+  margin-right: 3rem;
   display: inline-block;
   width: clamp(8rem, 20vw, 16rem);
   text-align: center;
