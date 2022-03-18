@@ -3,8 +3,11 @@ import { useParams } from "react-router-dom"
 import axios from 'axios';
 import './css/WordsShow.css'
 import { useNavigate } from 'react-router-dom';
+import {API_BASE_URL} from '../config/constants'
 
 const BASE_URL_WORDS = 'http://localhost:3000/words/'
+
+// console.log("check if the site is in Dev or not:", process.env.NODE_ENV);
 
 
 export default function WordsShow() {
@@ -25,7 +28,7 @@ export default function WordsShow() {
   const fetchData = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(BASE_URL_WORDS + character);
+      const res = await axios.get(API_BASE_URL + "words/" + character);
       console.log('CHECK Response', res.data);
       setWord(res.data);
     } catch (err) {

@@ -62,7 +62,7 @@ export default function Calculator() {
           </div>
         </div>
 
-      </div> //end of calPage
+      </div>
     </div>
   )
 }
