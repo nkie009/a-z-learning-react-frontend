@@ -1,6 +1,13 @@
-.calPage{
+
+.calHeading{
+  
   /* border: 3px solid red; */
   margin-top: 8rem;
+  margin-left: 0.5rem;
+  width: 10rem;
+}
+
+.calPage{
   height: 600px;
   display: flex;
   /* justify-content: center;
