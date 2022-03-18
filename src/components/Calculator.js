@@ -7,7 +7,7 @@ import './css/Calculator.css'
 export default function Calculator() {
 
   const [result, setResult] = useState('');
-  
+
   const handleClick = (ev) => {
     console.log('check e', ev);
     setResult(result + (ev.target.name))
@@ -31,8 +31,12 @@ export default function Calculator() {
       <h1 className="calHeading">Calculator</h1>
       <div className="calPage">
 
-        <div className="tablesDiv">
+        {/* <div className="tablesDiv">
           <img className="timesTable" src={`./images/timestables.svg`} alt="times" />
+        </div> */}
+
+        <div className="tablesDiv">
+          <img className="timesTable" src={`./images/timestables-01.svg`} alt="times" />
         </div>
 
         <div className="calculator">
