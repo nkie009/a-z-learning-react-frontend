@@ -65,7 +65,7 @@ export default function WordsShow() {
           <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />
           <p className="tileItem">{item}</p>
           <p className="defineText">{definition}</p>
-          <button onClick={refresh}>Random Pick</button>
+          <button className="refreshButton" onClick={refresh}>Random Pick</button>
         </div>
       )}
 

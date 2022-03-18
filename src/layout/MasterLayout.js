@@ -5,6 +5,7 @@ import AlphabetIndex from '../components/AlphabetIndex';
 import WordsShow from '../components/WordsShow';
 import Home from '../components/Home';
 import Calculator from '../components/Calculator';
+import Video from '../components/Video';
 
 
 
@@ -23,6 +24,7 @@ export default function MasterLayout(props) {
            <Route exact path="/alphabets" element={<AlphabetIndex />} />
            <Route exact path="/alphabets/:character" element={<WordsShow />} />
           <Route exact path="/maths-tables" element={<Calculator />} />
+          <Route exact path="/learning-videos" element={<Video />} />
 
         </Routes>
       </Router>
