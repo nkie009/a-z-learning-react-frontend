@@ -6,6 +6,8 @@
   position: fixed;
   top: 0;
   display: inline;
+  box-shadow: 0 8px 20px black;
+  
 } 
 
 .navTabs{

@@ -1,0 +1,16 @@
+html, body{
+  height: 100%;
+}
+
+.body{
+  display: flex;
+}
+
+.game{
+  margin-top: 8rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
