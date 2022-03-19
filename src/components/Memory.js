@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import './css/Memory.css'
+import SingleCard from "./SingleCard";
 
 const cardImages = [
   { "src": "/images/apple.svg" },
@@ -29,23 +30,16 @@ export default function Memory() {
 
   return (
     <div className="game">
-
-
       <h1 className="titleGame">Memory Game</h1>
 
       <button className="newGameButton" onClick={shuffleCards}>New Game</button>
 
 
-    <div className="card-grid">
+    <div className="cardGrid">
 
       {cards.map(card =>(
-        <div key={card.id} className="card">
-          <div>
-            <img className="front" src={card.src} alt="card front" />
-            <img src="/images/azlearning.svg" alt="cover" />
-
-          </div>
-        </div>
+        <SingleCard key={card.id} card={card}/> 
+        /* here is to pass down props 'card' to Single Card componenets */
       ))}
     </div>
 
