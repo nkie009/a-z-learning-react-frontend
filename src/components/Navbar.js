@@ -20,7 +20,7 @@ export default function Navbar() {
 
         <img className="timesTab" src={`./images/times.svg`} alt="times" onClick={() => navigate('/maths-tables')} />
 
-        <a className="kidsVideo" href="/learning-videos">Videos</a>
+        <a className="kidsVideo" href="#/learning-videos">Videos</a>
 
       </div>
 
