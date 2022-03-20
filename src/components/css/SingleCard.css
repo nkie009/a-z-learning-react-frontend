@@ -32,3 +32,8 @@
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
+
+#test{
+  border: 3px solid red;
+  width: 10.5vw;
+}
