@@ -40,7 +40,7 @@
   z-index: 9;
 }
 
-.azHome, .kidsVideo, .memoryGame{
+.azHome{
   /* border: 3px solid red; */
   font-size: 24px;
   font-weight: 600;
@@ -50,6 +50,35 @@
   margin-top: 1.2rem;
   text-align: center;
 }
+
+.kidsVideo{
+  /* border: 3px solid red; */
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+
+
+
+.memoryGame{
+  /* border: 3px solid red; */
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+
+
+
 
 
 .logo{
