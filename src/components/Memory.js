@@ -88,6 +88,7 @@ export default function Memory() {
 
       <button className="newGameButton" onClick={shuffleCards}>New Game</button>
 
+      <p>Turns: {turns}</p>
 
       <div className="cardGrid">
 
@@ -104,7 +105,6 @@ export default function Memory() {
       </div>
 
 
-      <p>Turns: {turns}</p>
 
     </div>
   )
