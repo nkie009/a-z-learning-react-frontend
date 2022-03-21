@@ -9,9 +9,9 @@ a-z learning is a educational website, targeting 3 - 5 years old children. The w
 - Video page, children can watch their favorite videos on this page
 - Mini game which is a matching game, children need to look for the correct word to match the image.
 
-[screenshots1](./images/screenshot1.png)
-[screenshots2](./images/screenshot2.png)
-[screenshots3](./images/screenshot3.png)
+[screenshots1](./public/images/screenshot1.png)
+[screenshots2](./public/images/screenshot2.png)
+[screenshots3](./public/images/screenshot3.png)
 
 ## Tech
 - React
