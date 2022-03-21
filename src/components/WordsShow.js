@@ -50,7 +50,6 @@ export default function WordsShow() {
   // console.log('WORD', word)
   const { item, definition, image_items, image_letter } = word
 
-
   return (
 
     <div>

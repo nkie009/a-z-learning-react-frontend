@@ -19,18 +19,23 @@
 
 .timesTab {
   /* border: 3px solid red; */
-  width: 2rem;
-  cursor: pointer;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+  margin-top: 1.2rem;
+  text-align: center;
 }
 
-.timesTab:hover{
-  transform: scale(1.2,1.2);
-  z-index: 9;
-}
+/* .timesTab:hover{
+  color: #ff0080;
+} */
 
 .azTab{
   /* border: 3px solid red; */
   width: 3.9rem;
+  margin-left: 1rem;
   margin-right: 1.5rem;
   cursor: pointer;
 }
@@ -56,7 +61,7 @@
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-right: 1.5rem;
   margin-top: 1.2rem;
   text-align: center;
@@ -84,7 +89,7 @@
 
 
 
-.azHome:hover{
+.azHome:hover, .timesTab:hover, .kidsVideo:hover, .matchGame:hover{
   -webkit-animation:rainbow 1s infinite;
 -ms-animation:rainbow 1s infinite;
 -o-animation:rainbow 1s infinite;

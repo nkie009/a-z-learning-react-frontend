@@ -11,7 +11,7 @@ export default function Calculator() {
   const handleClick = (ev) => {
     console.log('check e', ev);
     setResult(result + (ev.target.name))
-  };// handleClick
+  };// handleClick: set State result + the event click handler
 
   const clear = () => {
     setResult(""); // here is to set the results empty

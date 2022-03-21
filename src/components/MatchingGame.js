@@ -49,7 +49,7 @@ export default function MatchingGame() {
     <div className="mainGame">
       <h1 className="titleGame">Matching Game</h1>
 
-      <button className="nextGameButton" onClick={fetchData}>Skip</button>
+      <button className="skipButton" onClick={fetchData}>Skip</button>
 
       <div className="msg">{gameMessage}</div>
 
@@ -61,7 +61,7 @@ export default function MatchingGame() {
           <div className="wordsGuess">
             {gameWord.all_words.map(word => (
               <div key={word}>
-                <h2 className="WrongGuessingWords" onClick={() => selected(word)}>{word}</h2>
+                <h2 className="guessingWordsButton" onClick={() => selected(word)}>{word}</h2>
               </div>
             ))}
 

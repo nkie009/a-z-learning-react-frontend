@@ -1,6 +1,19 @@
 .mainGame{
   margin-top: 6rem;
+  margin-left: 1rem;
   /* border: 3px solid red; */
+}
+.titleGame{
+  margin-bottom: 0.5rem;
+  background-color: hotpink;
+  padding: 10px 0 0 0;
+  font-size: clamp(2rem, 2vw, 3rem);
+  font-weight: 600;
+  width: 15rem;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
 }
 
 .matchingGame{
@@ -15,12 +28,16 @@
 .guessImage{
   width: 20rem;
   background-color: white;
-  border: 3px solid red;
+  border: 7px solid yellow;
+  border-radius: 10px;
+  box-shadow: 5px 5px green;
+  margin-bottom: 1rem;
 }
 
-.WrongGuessingWords{
+.guessingWordsButton{
   border: 3px solid red;
-  width: 8rem;
+  width: clamp(8rem, 8vw, 12rem);
+  height: auto;
   text-align: center;
   background-color: white;
   border-radius: 5px;
@@ -29,8 +46,12 @@
 }
 
 .msg{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   text-align: center;
   font-size: 30px;
   font-weight: 600;
+}
+
+.skipButton{
+
 }

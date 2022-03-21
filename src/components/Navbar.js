@@ -18,7 +18,8 @@ export default function Navbar() {
 
         <img className="azTab" src={`./images/abcNavbar.svg`} alt="times" onClick={() => navigate('/alphabets')} />
 
-        <img className="timesTab" src={`./images/times.svg`} alt="times" onClick={() => navigate('/maths-tables')} />
+
+        <a className="timesTab" href="#/maths-tables">Calculator</a>
 
         <a className="kidsVideo" href="#/learning-videos">Videos</a>
 
