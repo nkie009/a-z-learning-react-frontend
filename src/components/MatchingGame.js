@@ -44,19 +44,28 @@ export default function MatchingGame() {
     }
   }
 
+
+  const refresh = () => {
+    fetchData();
+    setLoading(true);
+  };
+
+
   return (
     <div className="mainGame">
-
       <h1 className="titleGame">Matching Game</h1>
+
+      <button className="nextGameButton" onClick={refresh}>Next Game</button>
+
+
+      <div className="msg">{gameMessage}</div>
 
       <div className="matchingGame">
 
-        {gameMessage}
-
-        <div className="leftSideGame">
+        <div className="imageGuess">
           <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
 
-          <div className="rightSideGame">
+          <div className="wordsGuess">
             {gameWord.all_words.map(word => (
               <div key={word}>
                 <h2 className="WrongGuessingWords" onClick={() => selected(word)}>{word}</h2>

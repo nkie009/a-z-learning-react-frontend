@@ -1,6 +1,6 @@
 .mainGame{
   margin-top: 6rem;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .matchingGame{
@@ -26,4 +26,11 @@
   border-radius: 5px;
   cursor: pointer;
   margin: 0.5rem;
+}
+
+.msg{
+  border: 3px solid red;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
 }
