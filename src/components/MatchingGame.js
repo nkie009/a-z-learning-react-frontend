@@ -38,10 +38,10 @@ export default function MatchingGame() {
     console.log('check if clicked', clickedWord);
     if (clickedWord === gameWord.guess_word.item) {
       // console.log('word guessed');
-      setGameMessage("Good Job! Correct")
+      setGameMessage(" 🎈🎉✨Good Job! Correct🎉✨🎈")
     } else {
       // console.log('guess again');
-      setGameMessage("Try Again")
+      setGameMessage("Try Again 😉")
     }
   }
 
@@ -49,7 +49,7 @@ export default function MatchingGame() {
     <div className="mainGame">
       <h1 className="titleGame">Matching Game</h1>
 
-      <button className="skipButton" onClick={fetchData}>Skip</button>
+      <button className="skipButton" onClick={fetchData}>Skip &#8594;</button>
 
       <div className="msg">{gameMessage}</div>
 
@@ -57,15 +57,14 @@ export default function MatchingGame() {
 
         <div className="imageGuess">
           <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
-
+          </div>
+          
           <div className="wordsGuess">
             {gameWord.all_words.map(word => (
               <div key={word}>
                 <h2 className="guessingWordsButton" onClick={() => selected(word)}>{word}</h2>
               </div>
             ))}
-
-          </div>
 
         </div>
 

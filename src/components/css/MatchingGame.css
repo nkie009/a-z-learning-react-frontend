@@ -18,6 +18,7 @@
 
 .matchingGame{
   display: flex;
+  width: 100%;
 }
 
 .matchingGame div{
@@ -26,32 +27,49 @@
 }
 
 .guessImage{
-  width: 20rem;
+  width: 40vw;
   background-color: white;
   border: 7px solid yellow;
   border-radius: 10px;
   box-shadow: 5px 5px green;
   margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .guessingWordsButton{
-  border: 3px solid red;
-  width: clamp(8rem, 8vw, 12rem);
-  height: auto;
+  border: 3px solid blue;
+  width: clamp(10rem, 20vw, 25.5rem);
+  height: clamp(2rem, 5vw, 6rem);
   text-align: center;
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
   margin: 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 6rem);
+  color: black;
+  text-shadow: 0.1rem 0.1rem pink;
+  
 }
+.guessingWordsButton:hover{
+  background-color: rgb(255, 162, 0);
+}
+
 
 .msg{
   /* border: 3px solid red; */
   text-align: center;
   font-size: 30px;
   font-weight: 600;
+  height: 2rem;
+  margin-bottom: 1rem;
 }
 
 .skipButton{
+  border: 3px solid black;
+  border-radius: 0.2rem;
+  background-color: white;
+}
 
+.skipButton:hover{
+  background-color: greenyellow;
 }
