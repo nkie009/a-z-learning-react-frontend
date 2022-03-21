@@ -17,10 +17,6 @@ export default function Calculator() {
     setResult(""); // here is to set the results empty
   } // clear
 
-  const backspace = () => {
-    setResult(result.slice(0, -1)); // here is to slice the position of the result and -1
-  }// backspace
-
   const equal = () => {
     setResult(eval(result));
   }// equal
@@ -34,10 +30,6 @@ export default function Calculator() {
 
       <div className="calPage">
 
-        {/* <div className="tablesDiv">
-          <img className="timesTable" src={`./images/timestables.svg`} alt="times" />
-        </div> */}
-
         <div className="tablesDiv">
           <img className="timesTable" src={`./images/timestables-01.svg`} alt="times" />
         </div>
@@ -49,7 +41,6 @@ export default function Calculator() {
             </form>
             <div className="keypad">
               <button onClick={clear} className="clear" id="bgColor">Clear</button>
-              <button onClick={backspace} className="backspace" id="bgColor">C</button>
               <button name="/" onClick={handleClick} id="bgColor">&divide;</button>
               <button name="7" onClick={handleClick}>7</button>
               <button name="8" onClick={handleClick}>8</button>

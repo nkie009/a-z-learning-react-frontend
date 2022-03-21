@@ -46,6 +46,8 @@ export default function WordsShow() {
   // console.log('WORD', word)
   const { item, definition, image_items, image_letter } = word
 
+  
+
 
   return (
 
@@ -56,13 +58,13 @@ export default function WordsShow() {
 
       
       <div className="leftLetter">
-      <img className="letterShowImage" src={`http://localhost:3000/assets/${image_letter}`} />
+      <img className="letterShowImage" src={(API_BASE_URL + "assets/" + `${image_letter}`)} />
       </div>
 
       {loading && <div>Loading</div>} 
       {!loading && (
         <div className="rightShowCard">
-          <img className="itemShowImage" src={`http://localhost:3000/assets/${image_items}`} />
+          <img className="itemShowImage" src={API_BASE_URL + "assets/" + `${image_items}`} />
           <p className="tileItem">{item}</p>
           <p className="defineText">{definition}</p>
           <button className="refreshButton" onClick={refresh}>Random Pick</button>

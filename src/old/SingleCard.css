@@ -1,9 +1,8 @@
-.card{
+/* .card{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid black; */
-  /* font-size: 3em; */
+
 }
 
 .card img{
@@ -36,4 +35,4 @@
 .flipped .back{
   transform: rotateY(90deg);
   transition-delay: 0s;
-}
+} */

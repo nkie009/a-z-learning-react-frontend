@@ -22,7 +22,7 @@ export default function Navbar() {
 
         <a className="kidsVideo" href="#/learning-videos">Videos</a>
 
-        <a className="memoryGame" href="#/memory-game">Mini Game</a>
+        <a className="matchGame" href="#/matching-game">Mini Game</a>
 
       </div>
 

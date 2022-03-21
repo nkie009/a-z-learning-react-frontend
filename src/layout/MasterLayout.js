@@ -6,7 +6,8 @@ import WordsShow from '../components/WordsShow';
 import Home from '../components/Home';
 import Calculator from '../components/Calculator';
 import Video from '../components/Video';
-import Memory from '../components/Memory'
+// import Memory from '../old/Memory'
+import MatchingGame from '../components/MatchingGame';
 
 
 export default function MasterLayout(props) {
@@ -25,7 +26,7 @@ export default function MasterLayout(props) {
            <Route exact path="/alphabets/:character" element={<WordsShow />} />
           <Route exact path="/maths-tables" element={<Calculator />} />
           <Route exact path="/learning-videos" element={<Video />} />
-          <Route exact path="/memory-game" element={<Memory />} />
+          <Route exact path="/matching-game" element={<MatchingGame />} />
 
         </Routes>
       </Router>
