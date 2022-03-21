@@ -35,10 +35,10 @@ export default function MatchingGame() {
 
   const selected = (clickedWord) => {
     console.log('check if clicked', clickedWord);
-    if(clickedWord === gameWord.guess_word.item){
+    if (clickedWord === gameWord.guess_word.item) {
       // console.log('word guessed');
       setGameMessage("Good Job! Correct")
-    } else{
+    } else {
       // console.log('guess again');
       setGameMessage("Try Again")
     }
@@ -51,7 +51,7 @@ export default function MatchingGame() {
 
       <div className="matchingGame">
 
-      {gameMessage}
+        {gameMessage}
 
         <div className="leftSideGame">
           <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
@@ -59,7 +59,7 @@ export default function MatchingGame() {
           <div className="rightSideGame">
             {gameWord.all_words.map(word => (
               <div key={word}>
-                <h2 className="WrongGuessingWords" onClick={()=>selected(word)}>{word}</h2>
+                <h2 className="WrongGuessingWords" onClick={() => selected(word)}>{word}</h2>
               </div>
             ))}
 
