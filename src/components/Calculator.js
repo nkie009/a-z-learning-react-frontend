@@ -31,7 +31,7 @@ export default function Calculator() {
       <div className="calPage">
 
         <div className="tablesDiv">
-          <img className="timesTable" src={`./images/timestables-01.svg`} alt="times" />
+          <img className="timesTable" src={`./images/tables_v1-04.svg`} alt="times" />
         </div>
 
         <div className="calculator">

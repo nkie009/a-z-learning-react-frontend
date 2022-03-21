@@ -15,5 +15,7 @@ a-z learning is a educational website, targeting 3 - 5 years old children. The w
 - CSS
 
 ## Wishlist
+1. Add more games to the page
+2. Add sound effect on click buttons
 
 
