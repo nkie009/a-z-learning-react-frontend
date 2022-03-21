@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import axios from 'axios';
 import './css/WordsShow.css'
 import { useNavigate } from 'react-router-dom';
-import {API_BASE_URL} from '../config/constants'
+import { API_BASE_URL } from '../config/constants'
 
 const BASE_URL_WORDS = 'http://localhost:3000/words/'
 
@@ -17,7 +17,7 @@ export default function WordsShow() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { character } = useParams();
-  
+
 
 
   useEffect(() => {
@@ -55,12 +55,12 @@ export default function WordsShow() {
     <div>
       <div className="backButton" onClick={() => navigate('/alphabets')} >&#8592; back
       </div>
-    <div className="wordShow">
+      <div className="wordShow">
 
-      
-      <div className="leftLetter">
-      <img className="letterShowImage" src={(API_BASE_URL + "assets/" + `${image_letter}`)} />
-      </div>
+
+        <div className="leftLetter">
+          <img className="letterShowImage" src={(API_BASE_URL + "assets/" + `${image_letter}`)} />
+        </div>
 
         <div className="rightShowCard">
           <img className="itemShowImage" src={API_BASE_URL + "assets/" + `${image_items}`} />
@@ -69,7 +69,7 @@ export default function WordsShow() {
           <button className="refreshButton" onClick={refresh}>Random Pick</button>
         </div>
 
+      </div>
     </div>
-</div>
   )
 }

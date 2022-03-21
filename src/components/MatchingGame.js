@@ -57,14 +57,14 @@ export default function MatchingGame() {
 
         <div className="imageGuess">
           <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
-          </div>
-          
-          <div className="wordsGuess">
-            {gameWord.all_words.map(word => (
-              <div key={word}>
-                <h2 className="guessingWordsButton" onClick={() => selected(word)}>{word}</h2>
-              </div>
-            ))}
+        </div>
+
+        <div className="wordsGuess">
+          {gameWord.all_words.map(word => (
+            <div key={word}>
+              <h2 className="guessingWordsButton" onClick={() => selected(word)}>{word}</h2>
+            </div>
+          ))}
 
         </div>
 

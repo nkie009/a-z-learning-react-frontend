@@ -19,11 +19,11 @@ export default function MasterLayout(props) {
       {props.children}
 
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />        
-           <Route exact path="/alphabets" element={<AlphabetIndex />} />
-           <Route exact path="/alphabets/:character" element={<WordsShow />} />
+          <Route path="/" element={<Home />} />
+          <Route exact path="/alphabets" element={<AlphabetIndex />} />
+          <Route exact path="/alphabets/:character" element={<WordsShow />} />
           <Route exact path="/maths-tables" element={<Calculator />} />
           <Route exact path="/learning-videos" element={<Video />} />
           <Route exact path="/matching-game" element={<MatchingGame />} />
@@ -31,7 +31,7 @@ export default function MasterLayout(props) {
         </Routes>
       </Router>
 
-        
+
 
     </div>
   )
