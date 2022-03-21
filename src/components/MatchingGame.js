@@ -14,6 +14,7 @@ export default function MatchingGame() {
 
   const fetchData = async () => {
     setLoading(true);
+    setGameMessage("");
     try {
       const res = await axios.get(API_BASE_URL + "games/wordmatch");
       setGameWord(res.data)
@@ -44,19 +45,11 @@ export default function MatchingGame() {
     }
   }
 
-
-  const refresh = () => {
-    fetchData();
-    setLoading(true);
-  };
-
-
   return (
     <div className="mainGame">
       <h1 className="titleGame">Matching Game</h1>
 
-      <button className="nextGameButton" onClick={refresh}>Next Game</button>
-
+      <button className="nextGameButton" onClick={fetchData}>Skip</button>
 
       <div className="msg">{gameMessage}</div>
 

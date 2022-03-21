@@ -43,6 +43,10 @@ export default function WordsShow() {
     setLoading(true);
   };
 
+  if (loading === true) {
+    return <p>Loading...</p>
+  }
+
   // console.log('WORD', word)
   const { item, definition, image_items, image_letter } = word
 
@@ -59,15 +63,12 @@ export default function WordsShow() {
       <img className="letterShowImage" src={(API_BASE_URL + "assets/" + `${image_letter}`)} />
       </div>
 
-      {loading && <div>Loading...</div>} 
-      {!loading && (
         <div className="rightShowCard">
           <img className="itemShowImage" src={API_BASE_URL + "assets/" + `${image_items}`} />
           <p className="tileItem">{item}</p>
           <p className="defineText">{definition}</p>
           <button className="refreshButton" onClick={refresh}>Random Pick</button>
         </div>
-      )}
 
     </div>
 </div>
