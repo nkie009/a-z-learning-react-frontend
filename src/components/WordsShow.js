@@ -31,11 +31,11 @@ export default function WordsShow() {
       const res = await axios.get(API_BASE_URL + "words/" + character);
       console.log('CHECK Response', res.data);
       setWord(res.data);
+      setLoading(false);
     } catch (err) {
       console.log('Error in search AJAX', err);
       setError(err);
     }
-    setLoading(false);
   }; // end of fetchData
 
   const refresh = () => {
@@ -61,7 +61,7 @@ export default function WordsShow() {
       <img className="letterShowImage" src={(API_BASE_URL + "assets/" + `${image_letter}`)} />
       </div>
 
-      {loading && <div>Loading</div>} 
+      {loading && <div>Loading...</div>} 
       {!loading && (
         <div className="rightShowCard">
           <img className="itemShowImage" src={API_BASE_URL + "assets/" + `${image_items}`} />

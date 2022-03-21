@@ -1,5 +1,19 @@
 .matchingGame{
-
   margin-top: 6rem;
   border: 3px solid red;
+}
+
+.guessImage{
+  width: 20rem;
+  background-color: white;
+  border: 3px solid red;
+}
+
+.WrongGuessingWords{
+  border: 3px solid red;
+  width: 8rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }

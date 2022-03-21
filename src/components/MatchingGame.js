@@ -11,36 +11,51 @@ export default function MatchingGame() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-
   const fetchData = async () => {
     setLoading(true);
     try {
       const res = await axios.get(API_BASE_URL + "games/wordmatch");
       setGameWord(res.data)
       console.log("check RES here", res.data)
+      setLoading(false);
     } catch (err) {
       console.log('Error in search AJAX', err);
       setError(err);
     } // try & catch
-    setLoading(false);
   } // fetchData
 
   useEffect(() => {
     fetchData();
   }, []); //useEffect
 
-  const newGame = () =>{
-    fetchData();
-    setLoading(true);
-  }// set a new game
+  if (loading === true) {
+    return <p>Loading...</p>
+  }
+
+  const selected = () => {
+  console.log('check if clicked');
+  }
+
+
 
   return (
     <div className="matchingGame">
       <h1 className="titleGame">Matching Game</h1>
 
-      <button className="newGameButton" onClick={newGame}>New Game</button>
+      <div className="leftSideGame">
+        <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
+
+        <div className="rightSideGame">
+
+          {gameWord.all_words.map(WrongWord => (
+            <div key={WrongWord}>
+              <h2 className="WrongGuessingWords" onClick={selected}>{WrongWord}</h2>
+            </div>
+          ))}
+        </div>
 
 
+      </div>
 
 
     </div>
