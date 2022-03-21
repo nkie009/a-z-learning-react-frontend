@@ -10,6 +10,7 @@ export default function MatchingGame() {
   const [gameWord, setGameWord] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [gameMessage, setGameMessage] = useState("");
 
   const fetchData = async () => {
     setLoading(true);
@@ -26,37 +27,47 @@ export default function MatchingGame() {
 
   useEffect(() => {
     fetchData();
-  }, []); //useEffect
+  }, []); //useEffect did mount
 
   if (loading === true) {
     return <p>Loading...</p>
   }
 
-  const selected = () => {
-  console.log('check if clicked');
+  const selected = (clickedWord) => {
+    console.log('check if clicked', clickedWord);
+    if(clickedWord === gameWord.guess_word.item){
+      // console.log('word guessed');
+      setGameMessage("Good Job! Correct")
+    } else{
+      // console.log('guess again');
+      setGameMessage("Try Again")
+    }
   }
 
-
-
   return (
-    <div className="matchingGame">
+    <div className="mainGame">
+
       <h1 className="titleGame">Matching Game</h1>
 
-      <div className="leftSideGame">
-        <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
+      <div className="matchingGame">
 
-        <div className="rightSideGame">
+      {gameMessage}
 
-          {gameWord.all_words.map(WrongWord => (
-            <div key={WrongWord}>
-              <h2 className="WrongGuessingWords" onClick={selected}>{WrongWord}</h2>
-            </div>
-          ))}
+        <div className="leftSideGame">
+          <img className="guessImage" src={API_BASE_URL + "assets/" + gameWord.guess_word.image_items} />
+
+          <div className="rightSideGame">
+            {gameWord.all_words.map(word => (
+              <div key={word}>
+                <h2 className="WrongGuessingWords" onClick={()=>selected(word)}>{word}</h2>
+              </div>
+            ))}
+
+          </div>
+
         </div>
 
-
       </div>
-
 
     </div>
   )

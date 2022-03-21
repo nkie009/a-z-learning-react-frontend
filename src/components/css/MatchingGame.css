@@ -1,6 +1,15 @@
-.matchingGame{
+.mainGame{
   margin-top: 6rem;
   border: 3px solid red;
+}
+
+.matchingGame{
+  display: flex;
+}
+
+.matchingGame div{
+  display: inline-block;
+  text-align: center;
 }
 
 .guessImage{
@@ -16,4 +25,5 @@
   background-color: white;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0.5rem;
 }
