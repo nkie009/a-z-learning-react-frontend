@@ -104,8 +104,6 @@ export default function Memory() {
         ))}
       </div>
 
-
-
     </div>
   )
 }

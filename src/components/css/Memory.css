@@ -5,18 +5,20 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 3px solid red;
-  height: 80vw;
+  height: 70vw;
+  /* border: 3px solid red; */
 }
 
 .cardGrid{
   border: 3px solid red;
-  height: 50%;
+  vertical-align: center;
+  height: 60%;
   padding: 1rem;
   margin-top: 1rem;
-  display: grid;
+  display: inline-grid;
+  grid-gap: 3px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: clamp(2rem, 6vw, 7rem);
+  grid-column-gap: 2rem;
   background-color: pink;
   border-radius: 10px;
 

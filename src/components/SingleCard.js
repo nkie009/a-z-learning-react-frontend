@@ -14,7 +14,7 @@ export default function SingleCard({card, handleChoice, flipped, disabled}) {
     <div  className="card">
       <div className={flipped ? "flipped" : "test"} >
         <img className="front" src={card.src} alt="frontCard" />
-        <img className="back" src="/images/azlearning.svg" alt="backCard" onClick={handleClick} />
+        <img className="back" src="/images/azlearningCard.svg" alt="backCard" onClick={handleClick} />
       </div>
     </div>
   )

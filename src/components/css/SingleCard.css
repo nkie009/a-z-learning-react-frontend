@@ -1,5 +1,9 @@
 .card{
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* font-size: 3em; */
 }
 
 .card img{
@@ -15,6 +19,7 @@
   transform: rotateY(90deg);
   transition: all ease-in 0.2s;
   position: absolute;
+
 }
 
 .flipped .front{
@@ -32,9 +37,3 @@
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
-
-/* #test{
-  border: 3px solid red;
-  width: 10.5vw;
-  
-} */
