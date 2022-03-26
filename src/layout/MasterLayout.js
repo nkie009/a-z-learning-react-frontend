@@ -16,7 +16,7 @@ export default function MasterLayout(props) {
 
   return (
     <div>
-      {props.children}
+      {/* {props.children} */}
 
       <Router>
         <Navbar />
